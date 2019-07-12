@@ -1,0 +1,32 @@
+{
+  "name": "{{cookiecutter.project_name}}",
+  "version": "1.0.0",
+  "description": "{{cookiecutter.project_name}} - example app",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.26",
+    "@types/node": "^12.0.2",
+    "@types/uuid": "^3.4.4",
+    "aws-sdk": "^2.464.0",
+    "aws-sdk-mock": "^4.4.0",
+    "typescript": "^3.4.5",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.2",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "NODE_ENV=dev webpack --watch --mode=development",
+    "build": "NODE_ENV=prod webpack --mode=production",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "author": "Simon Thulbourn <thulsimo@amazon.com>",
+  "license": "MIT"
+}
