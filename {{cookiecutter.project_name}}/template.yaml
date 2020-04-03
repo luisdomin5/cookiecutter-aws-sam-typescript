@@ -16,10 +16,10 @@ Resources:
     Properties:
       CodeUri: build/hello-world
       Handler: index.handler
-      {%- if cookiecutter.runtime == 'nodejs8.10' %}
+      {%- if cookiecutter.runtime == 'nodejs10.x' %}
       Runtime: {{ cookiecutter.runtime }}
       {%- else %}
-      Runtime: nodejs10.x
+      Runtime: nodejs12.x
       {%- endif %}
       Events:
         HelloWorld:
